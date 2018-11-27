@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar transparent>
+  </ion-navbar>
+</ion-header>
+<ion-content [ngStyle]="{'background': 'url(' + imgPath + backdrop_path + ') center fixed'}">
+  <img [src]="imgPath + movie.poster_path" class="img_style">
+  <div class="title">
+   {{movie.title}}
+  </div>
+  <div class="overview">
+    {{movie.overview}}
+    <ion-list *ngIf="videos.length != 0">
+      <ion-item-divider no-margin header-title ion-affix class="item item-trns">
+        Videos
+      </ion-item-divider>
+      <ion-item *ngFor="let video of videos" (click)="openVideo(video.key)" class="item item-trns">
+        <ion-icon name="videocam" item-start></ion-icon>
+        {{video.name}}
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

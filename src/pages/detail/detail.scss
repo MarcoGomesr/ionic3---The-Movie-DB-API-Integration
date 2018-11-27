@@ -1,0 +1,97 @@
+page-detail {
+  .title {
+    margin-top: 10px;
+    position: relative;
+    padding: 10px;
+    font-size: font-size-text('h1') !important;
+    width: 100%;
+    top: 0;
+    color: theme-colors('textColors', 'secondaryBase') !important;
+    background: rgba(0,0,0,.5);
+  }
+
+  .overview{
+    color: theme-colors('textColors', 'secondaryBase') !important;
+    position: relative;
+    padding: 10px;
+    font-size: font-size-text('h4') !important;
+    text-align: justify;
+    background: rgba(0,0,0,.5);
+  }
+  [ion-affix] {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    border-top: none !important;
+    color: theme-colors('textColors', 'accentDark');
+  }
+
+  .img_style{
+    @media only screen and (min-width: 600px){
+      display: block;
+      width: 240px;
+      height: 300px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 5px 20px;
+      transition: 0.3s ease;
+      margin-left: 55%
+    }
+    @media only screen and (min-width: 768px){
+      display: block;
+      width: 240px;
+      height: 300px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 5px 20px;
+      transition: 0.3s ease;
+      margin-left: 65%
+    }
+    @media only screen and (min-width: 992px){
+      display: block;
+      width: 240px;
+      height: 300px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 5px 20px;
+      transition: 0.3s ease;
+      margin-left: 30%
+    }
+    @media only screen and (min-width: 1200px){
+      display: block;
+      width: 240px;
+      height: 300px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 5px 20px;
+      transition: 0.3s ease;
+      margin-left: 70%
+    }
+    @media only screen and (min-width: 360px){
+      display: block;
+      width: 240px;
+      height: 300px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 5px 20px;
+      transition: 0.3s ease;
+      margin-left: 33%
+    }
+    @media only screen and (min-width: 1024px){
+      display: block;
+      width: 240px;
+      height: 300px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 5px 20px;
+      transition: 0.3s ease;
+      margin-left: 70%
+    }
+  }
+
+  .item.item-trns {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+}

@@ -1,0 +1,92 @@
+page-home {
+  ion-navbar {
+    z-index: 9999;
+    position: relative;
+  }
+  .back-button,
+  .toolbar-title {
+    color: theme-colors('textColors', 'secondaryBase') !important;
+  }
+  ion-toolbar {
+    position: absolute;
+    top: 0;
+    .searchbar-ios .searchbar-input {
+      background-color: #f7f7f7 !important;
+    }
+  }
+
+  ion-content {
+    top: 104px;
+    &.content-ios {
+      top: 91px;
+    }
+  }
+  // Settings Big Image
+  [container-hearder-image] {
+    min-height: 160px!important;
+    @include darkening-blend-mode;
+    position: relative;
+
+    [search-bar-bcg] {
+      position: absolute;
+      z-index: 2;
+      right: 8px;
+      left: 8px;
+      bottom: 8px;
+
+      .searchbar-input {
+        border-radius: 8px;
+      }
+    }
+  }
+  // Settings Images Border Radius
+  ion-thumbnail img {
+    border-radius: $border-radius;
+  }
+  .input-wrapper {
+    display: block;
+  }
+  ion-badge {
+    right: 0;
+    bottom: 0;
+  }
+  .item-button{
+    background-color: #15c096;
+    color: #ffffff;
+  }
+
+  [card-background-page] {
+    ion-card {
+      position: relative;
+      height: 215px;
+      border-radius: $border-radius;
+      box-shadow: none;
+      margin-bottom: 16px;
+    }
+    // Card Title
+    [card-title] {
+      position: absolute;
+      padding: 10px;
+      font-size: font-size-text('h1') !important;
+      width: 100%;
+      top: 0;
+      color: theme-colors('textColors', 'secondaryBase') !important;
+      background: linear-gradient(to bottom, rgb(20, 20, 19) 20%, transparent 100%);
+      display: inline-grid;
+    }
+    // Card Subtitle
+    [card-subtitle] {
+      padding: 2px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: theme-colors('textColors', 'secondaryBase') !important;
+      background: linear-gradient(to top, rgb(20, 20, 19) 20%, transparent 100%);
+      display: inline-grid;
+    }
+  }
+  .badge{
+    width: 100%;
+    font-size: 10px !important;
+  }
+}
